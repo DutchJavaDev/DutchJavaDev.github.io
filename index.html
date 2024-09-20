@@ -1,227 +1,632 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Projects</title>
+  <style>
+    /* Inline CSS for responsive design */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #070E27;
+      color: white;
+    }
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
+    .project {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-    <!-- ===============================================-->
-    <!--    Document Title-->
-    <!-- ===============================================-->
-    <title>DucthJavaDev</title>
+      .project h2 {
+        margin-top: 0;
+      }
 
+      a{
+        text-decoration:none;
+        color:white;
+      }
 
-    <!-- ===============================================-->
-    <!--    Favicons-->
-    <!-- ===============================================-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.png">
+    .languages {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
 
+    .language {
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+    }
 
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
-    <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==">
-    <link href="assets/css/theme.css" rel="stylesheet" />
+    .language-unknown {
+      background-color: #888888;
+    }
 
-    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
-  </head>
+    .language-csharp {
+      background-color: #178600;
+    }
 
+    .language-javascript {
+      background-color: #bdaf42;
+    }
 
-  <body>
+    .language-python {
+      background-color: #3572A5;
+    }
 
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
-    <main class="main" id="top">
-      <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
-        <div class="container pt-2">
-            <a class="navbar-brand" href="https://github.com/DutchJavaDev" target="_blank"> 
-                <img class="rounded-circle" src="https://avatars.githubusercontent.com/u/19773367?s=40&v=4" alt="..." />
-                <h3 style="display: inline-block;">DutchJavaDev</h1>
-            </a>
-        </div>
-      </nav>
+    .language-java {
+      background-color: #b07219;
+    }
 
+    .language-cpp {
+      background-color: #f34b7d;
+    }
 
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="mt-6">
+    .language-html {
+      background-color: #e34c26;
+    }
 
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-9 col-lg-8 col-xl-7">
-              <h1 class="display-3 lh-sm">Hi there,</h1>
-              <h3>On this page you can view the projects I am working on or have created in the past</h3>
-              <h3>As you can see its still being developed</h3>
-              <h3>In the mean time you can view my other projects <a href="https://github.com/DutchJavaDev" target="_blank">here</a></h3>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
+    .language-css {
+      background-color: #563d7c;
+    }
 
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
+    .language-ruby {
+      background-color: #701516;
+    }
 
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section>
+    .language-go {
+      background-color: #00ADD8;
+    }
 
-        <div class="container">
-          <div class="row mb-4 mt-6">
-            <div class="col-md-6">
-              <div class="border rounded-1 border-700 features-items">
-                <div class="p-5">
-                  <h3 class="pt-3 lh-base">MyMusic NOT A SPOTIFY CLONE (Archived because google is ****)<img src="https://github.com/DutchJavaDev/MyMusic/actions/workflows/docker-image.yml/badge.svg" /> </h3>
-                  <p class="mb-0">NOT A SPOTIFY CLONE</p>
-                  <p class="mb-0">This is a project to see if I can make my own music by using the internet wich I pay for to my isp</p>
-                  <p>With that being said</p>
-                  <br>
-                  <p class="mb-0">This searches for music and adds it to your device of choice (te be decided who will be ignored)</p>
-                  <h3 class="mt-4">Language</h3>
-                  <div>
-                    <h4 class="d-inline-block" style="color:#178600"><b>C#</b></h4>
-                    <h4 class="d-inline-block" style="color:#accf66"><b>Javascript</b></h4>
-                    <h4 class="d-inline-block" style="color:#0064a5"><b>Postgres</b></h4>
-                    <h4 class="d-inline-block" style="color:#accf66"><b>Javascript</b></h4>
-                  </div>
-                 <div class="mt-5 mb-0">
-                  <a href="https://github.com/DutchJavaDev/MyMusic" target="_blank"><img class="img-fluid" style="width: 4rem !important;" src="images/github_octo.png"></a>
-                 </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="border rounded-1 border-700 features-items">
-                <div class="p-5">
-                  <h3 class="pt-3 lh-base">Overhaul <img src="https://github.com/DutchJavaDev/Overhaul/actions/workflows/dotnet.yml/badge.svg" /> </h3>
-                  <p class="mb-0"><a href="https://github.com/DapperLib/Dapper" target="_blank">Dapper</a> is great but it missed something for me and that was creating,altering and deleting tables and columns without me having to do it manually by going into the server or docker container, so i came up with this. It uses <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection">Reflection</a> to get information about properties of a <a href="https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-7.0s">Type</a>.</p>
-                  <br>
-                  <p class="mb-0">Its !100% written in C# and uses these 4 nuget packages</p>
-                  <ol>
-                    <li><a href="https://www.nuget.org/packages/Dapper/" target="_blank">Dapper</a></li>
-                    <li><a href="https://www.nuget.org/packages/Dapper.Contrib" target="_blank">Dapper.Contrib</a></li>
-                    <li><a href="https://www.nuget.org/packages/System.Data.SqlClient" target="_blank">System.Data.SqlClient</a></li>
-                    <li><a href="https://www.nuget.org/packages/Z.Dapper.Plus" target="_blank">Z.Dapper.Plus</a></li>
-                  </ol>
-                  <h3 class="mt-4">Language</h3>
-                  <div>
-                    <h4 class="d-inline-block" style="color:#178600"><b>C#</b></h4>
-                  </div>
-                 <div class="mt-5 mb-0">
-                  <a href="https://github.com/DutchJavaDev/Overhaul" target="_blank"><img class="img-fluid" style="width: 4rem !important;" src="images/github_octo.png"></a>
-                 </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="border rounded-1 border-700 h-100 features-items">
-                <div class="p-5">
-                  <h3 class="pt-3 lh-base">Raylib-Windows-Template</h3>
-                  <p class="mb-0">
-                    <a href="https://www.raylib.com/" target="_blank">Raylib</a> is a C programming library to enjoy videogames programming; no fancy interface, no visual helpers, no gui tools or editors... just coding in pure spartan-programmers way.</p>
-                    <p>I like to use it when I feel like I want to challenge myself by making the next best Flappy Bird game.</p>
-                      <p>This github project makes the setup on windows easy by just having to run a single script that will take care of:</p>
-                    <ol>
-                      <li>Creating a game directory</li>
-                      <li>Cloning the latest raylib</li>
-                      <li>Compiling raylib into a C Static Library</li>
-                    </ol>
-                    <h3 class="mt-4">Language</h3>
-                    <div>
-                      <h4 class="d-inline-block" style="color:#0246a5"><b>PowerShell</b></h4>
-                    </div>
-                  <div class="mt-5 mb-0">
-                    <a href="https://github.com/DutchJavaDev/Raylib-Windows-Template" target="_blank"><img class="img-fluid" style="width: 4rem !important;" src="images/github_octo.png"></a>
-                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="border rounded-1 border-700 h-100 features-items">
-                <div class="p-5">
-                  <h3 class="pt-3 lh-base">BlockyThingie codename: Auril</h3>
-                  <p class="mb-0">
-                    2D game trying out the latest release of the <a href="https://www.raylib.com/" target="_blank">Raylib</a> library, its still in its early stages.
-                    <p>Haven't created a 2d game in a while so this will be fresh start to re-learn some concepts</p>
-                    <ul>
-                      <li>Collision detection with AABB or a beter form</li>
-                      <li>Rendering optimaztions using a dynamic camera that follows a target</li>
-                      <li>Fresh up my math skills with Vector math</li>
-                    </ul>
-                    <br>
-                   <h3> Things done so far</h3>
-                    <ul>
-                      <li>
-                        <p>Created 2d map using <a href="https://www.mapeditor.org/" target="_blank">Tiled</a> mapeditor, with tiled I created a simple map that can be rendered in Raylib.</p>
-                        <p>Had to create a custom <a href="https://www.mapeditor.org/docs/scripting/" target="_blank">extension</a> with javascript for <a href="https://www.mapeditor.org/" target="_blank">Tiled</a> because I wanted to have full control of the entire export and import so I could make customizations as I wish, the javascript extension project can be found <a href="https://github.com/DutchJavaDev/BlockyThingie_Tiled_extensions" target="_blank">here</a></p>
-                      </li>
-                      <li>
-                        <p>Wrote a map importer for the game, file is <a href="https://github.com/DutchJavaDev/BlockyThing/blob/949d41aefaac16c6fc63d515b9dcf893ba60fd69/game/src/game_init.h#L65" target="_blank">here</a></p>
-                      </li>
-                      <li>
-                        <p>Added <a href="https://github.com/SanderMertens/flecs" target="_blank">FLECS</a>, a <a href="https://en.wikipedia.org/wiki/Entity_component_system" target="_blank">ECS</a> library for C/C++ because ECS approach for a game is more clean if you ask me</p>
-                      </li>
-                      <li>
-                        <p>Working on collision..... math is fun </p>
-                      </li>
-                    </ul>
-                    <h3 class="mt-4">Languages</h3>
-                    <div>
-                      <h4 class="d-inline-block" style="color:#767676"><b>C,</b></h4>
-                      <h4 class="d-inline-block" style="color:#accf66"><b>Javascript</b></h4>
-                    </div>
-                    <div class="mt-5 mb-0">
-                      <a href="https://github.com/DutchJavaDev/BlockyThing" target="_blank"><img class="img-fluid" style="width: 4rem !important;" src="images/github_octo.png"></a>
-                     </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          </div>
-        <!-- end of .container-->
+    .language-php {
+      background-color: #4F5D95;
+    }
 
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
+    .language-typescript {
+      background-color: #3178c6;
+    }
 
+    .language-swift {
+      background-color: #ffac45;
+    }
 
-      <section class="bg-secondary">
+    .language-rust {
+      background-color: #dea584;
+    }
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 pt-2 pt-xl-0 text-center text-xl-end">
-                    <p class="">❤️</a></p>
-                  </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
+    .language-kotlin {
+      background-color: #A97BFF;
+    }
 
-    </main>
-    <!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
+    .language-shell {
+      background-color: #89e051;
+    }
 
+    .language-scala {
+      background-color: #c22d40;
+    }
 
+    .language-perl {
+      background-color: #0298c3;
+    }
 
+    .language-lua {
+      background-color: #000080;
+    }
 
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="index.js"></script>
-    <script src="vendors/@popperjs/popper.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
-    <script src="vendors/swiper/swiper-bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <script src="assets/js/theme.js"></script>
+    .language-objectivec {
+      background-color: #438eff;
+    }
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap" rel="stylesheet">
-  </body>
+    .language-r {
+      background-color: #198ce7;
+    }
 
+    .language-haskell {
+      background-color: #5e5086;
+    }
+
+    .language-elixir {
+      background-color: #6e4a7e;
+    }
+
+    .language-dart {
+      background-color: #00B4AB;
+    }
+
+    .language-powershell {
+      background-color: #012456;
+    }
+
+    .language-matlab {
+      background-color: #e16737;
+    }
+
+    .language-coffeescript {
+      background-color: #244776;
+    }
+
+    .language-vimscript {
+      background-color: #199f4b;
+    }
+
+    .language-tex {
+      background-color: #3D6117;
+    }
+
+    .language-c {
+      background-color: #555555;
+    }
+
+    .language-dockerfile {
+      background-color: #384d54;
+    }
+
+    .language-markdown {
+      background-color: #083fa1;
+    }
+
+    .language-fsharp {
+      background-color: #b845fc;
+    }
+
+    .language-erlang {
+      background-color: #B83998;
+    }
+
+    .language-v {
+      background-color: #4f87c4;
+    }
+
+    .description {
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .github-link {
+      margin-top: 30px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .pull-request {
+      margin-top: 15px;
+      font-style: italic;
+      color: #888;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      .project {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My GitHub Projects</h1>
+    <h2>This was generated using <a style="text-decoration:underline !important;" href="https://github.com/DutchJavaDev/WebPageCreatorPOC">WebPageCreatorPOC</a></h2>
+    <!-- Example Project -->
+    <!--<div class="project">
+      <h2>Project 1: <span id="project-name-1">Project Name Placeholder</span></h2>
+      <div class="languages">
+        <span class="language language-csharp">C#</span>
+        <span class="language language-html">HTML</span>
+        <span class="language language-css">CSS</span>
+        <span class="language language-javascript">JavaScript</span>
+      </div>
+      <p class="description" id="project-desc-1">
+        This is a description placeholder for the project. It gives an overview of what the project is about.
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        Last pull request: Placeholder for the last pull request message.
+      </p>
+    </div>-->
+    <div class="project">
+      <h2>Name: <span id="project-name-1">WebPageCreatorPOC</span></h2>
+      <div class="languages">
+        <span class="language language-csharp">C# (55,28%)</span>
+<span class="language language-html">HTML (44,72%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Proof of concept to create a single index.html page out of my public github repositories, this was to test if it would work.</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Add project files.
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/WebPageCreatorPOC">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">DutchJavaDev.github.io</span></h2>
+      <div class="languages">
+        <span class="language language-css">CSS (75,41%)</span>
+<span class="language language-unknown">SCSS (17,84%)</span>
+<span class="language language-html">HTML (5,61%)</span>
+<span class="language language-javascript">JavaScript (1,13%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>No description found</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: update
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/DutchJavaDev.github.io">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">MyMusic</span></h2>
+      <div class="languages">
+        <span class="language language-csharp">C# (75,19%)</span>
+<span class="language language-html">HTML (18,75%)</span>
+<span class="language language-css">CSS (2,86%)</span>
+<span class="language language-unknown">PLpgSQL (1,94%)</span>
+<span class="language language-dockerfile">Dockerfile (1,26%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>A personal clone of Spotify to see if it can be created cheaper using the internet as source.</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Update README.md
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/MyMusic">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">DockerMyMusic</span></h2>
+      <div class="languages">
+        <span class="language language-unknown">No Language probally configuration</span>
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>MyMusic POC</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: lol :)
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/DockerMyMusic">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">Tower-of-Hanoi</span></h2>
+      <div class="languages">
+        <span class="language language-csharp">C# (100,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Programming challange</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Merge branch 'master' of https://github.com/DutchJavaDev/Tower-of-Hanoi
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/Tower-of-Hanoi">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">DockerComposeDevDeploy</span></h2>
+      <div class="languages">
+        <span class="language language-unknown">No Language probally configuration</span>
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Dockercompose file to quickly setup a enviroment with databases and some dashboards</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Update README.md
+
+todo add config this in nginx
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/DockerComposeDevDeploy">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">BlockyThing</span></h2>
+      <div class="languages">
+        <span class="language language-c">C (67,59%)</span>
+<span class="language language-cpp">C++ (32,12%)</span>
+<span class="language language-lua">Lua (0,30%)</span>
+<span class="language language-unknown">Batchfile (0,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Game in the works using Raylib + Flecs</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Merge pull request #2 from DutchJavaDev/tile_loading
+
+tile_loading
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/BlockyThing">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">BlockyThingie_Tiled_extensions</span></h2>
+      <div class="languages">
+        <span class="language language-javascript">JavaScript (100,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>No description found</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: skip empty tiles/ for now
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/BlockyThingie_Tiled_extensions">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">Raylib-Windows-Template</span></h2>
+      <div class="languages">
+        <span class="language language-powershell">PowerShell (80,50%)</span>
+<span class="language language-c">C (19,50%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>A template to create games with raylib on Windows, making it a one click install that can be repeated over</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Update CreateGame.ps1
+
+if check ... forgot this
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/Raylib-Windows-Template">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">cat-website-docker-nginx</span></h2>
+      <div class="languages">
+        <span class="language language-html">HTML (42,24%)</span>
+<span class="language language-javascript">JavaScript (33,89%)</span>
+<span class="language language-css">CSS (16,95%)</span>
+<span class="language language-dockerfile">Dockerfile (6,92%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>No description found</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: final changes
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/cat-website-docker-nginx">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">EspraAPI</span></h2>
+      <div class="languages">
+        <span class="language language-csharp">C# (99,14%)</span>
+<span class="language language-dockerfile">Dockerfile (0,86%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Storage API used for personal projects, stores JSON data and files in a mongodb</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: get group info
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/EspraAPI">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">Overhaul</span></h2>
+      <div class="languages">
+        <span class="language language-csharp">C# (100,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Dapper is great but it missed something for me and that was creating,altering and deleting tables</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Bump System.Data.SqlClient from 4.8.5 to 4.8.6 in /Overhaul (#4)
+
+Bumps [System.Data.SqlClient](https://github.com/dotnet/corefx) from 4.8.5 to 4.8.6.
+- [Release notes](https://github.com/dotnet/corefx/releases)
+- [Commits](https://github.com/dotnet/corefx/commits)
+
+---
+updated-dependencies:
+- dependency-name: System.Data.SqlClient
+  dependency-type: direct:production
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/Overhaul">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">Linkedlist</span></h2>
+      <div class="languages">
+        <span class="language language-c">C (100,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Project I started for learning the C language</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: testing listmanager
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/Linkedlist">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">CitiBank</span></h2>
+      <div class="languages">
+        <span class="language language-java">Java (99,29%)</span>
+<span class="language language-html">HTML (0,71%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Simple banking app made with java for project</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Update workspace.xml
+
+updated project file
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/CitiBank">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">Rust-Rock-Paper-Scissors</span></h2>
+      <div class="languages">
+        <span class="language language-rust">Rust (100,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Made while learning rust lang</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Update main.rs
+
+Bug fixes and cleaner code....sort of :smile:
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/Rust-Rock-Paper-Scissors">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">C_useless_tools</span></h2>
+      <div class="languages">
+        <span class="language language-c">C (100,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Learning c...</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Not mine
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/C_useless_tools">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">TODO-app</span></h2>
+      <div class="languages">
+        <span class="language language-objectivec">Objective-C (52,86%)</span>
+<span class="language language-dart">Dart (41,02%)</span>
+<span class="language language-ruby">Ruby (2,87%)</span>
+<span class="language language-c">C (2,75%)</span>
+<span class="language language-swift">Swift (0,28%)</span>
+<span class="language language-kotlin">Kotlin (0,23%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Todo app created with flutter</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: version 0.0.7
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/TODO-app">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">FlutterWeatherApp</span></h2>
+      <div class="languages">
+        <span class="language language-dart">Dart (75,37%)</span>
+<span class="language language-html">HTML (21,35%)</span>
+<span class="language language-swift">Swift (2,33%)</span>
+<span class="language language-kotlin">Kotlin (0,73%)</span>
+<span class="language language-objectivec">Objective-C (0,22%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Demo weather app using flutter</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Create README.md
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/FlutterWeatherApp">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">Tetris</span></h2>
+      <div class="languages">
+        <span class="language language-java">Java (100,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>Experimenting with tetris</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Added comments, removed unused class
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/Tetris">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">FrostEngine</span></h2>
+      <div class="languages">
+        <span class="language language-java">Java (100,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>A very simple 2d java game engin ish :)</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: Create README.md
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/FrostEngine">Github Link</a>
+      </p>
+    </div>
+<div class="project">
+      <h2>Name: <span id="project-name-1">MineSweeper</span></h2>
+      <div class="languages">
+        <span class="language language-java">Java (100,00%)</span>
+
+      </div>
+      <p class="description" id="project-desc-1">
+        <h3>My own version of minesweeper made with FrostEngine</h3>
+      </p>
+      <p class="pull-request" id="project-pr-1">
+        <b>Last Commit</b>: updated to new version of frostengine
+      </p>
+      <p class="github-link">
+         <a href="https://github.com/DutchJavaDev/MineSweeper">Github Link</a>
+      </p>
+    </div>
+
+  </div>
+
+  <script>
+  </script>
+</body>
 </html>

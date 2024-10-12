@@ -1,2 +1,1 @@
-Generated using WebPageCreatorPOC
-https://github.com/DutchJavaDev/WebPageCreatorPOC
+R2VuZXJhdGVkIHVzaW5nIFdlYlBhZ2VDcmVhdG9yUE9DCmh0dHBzOi8vZ2l0aHViLmNvbS9EdXRjaEphdmFEZXYvV2ViUGFnZUNyZWF0b3JQT0MK
